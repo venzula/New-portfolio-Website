@@ -11,7 +11,8 @@ body {
 }
 
 h1 {
-  color: rgb(37, 37, 205);
+  color: #00bfff;
+  font-size: 38px;
 }
 nav {
   display: flex;
@@ -26,27 +27,32 @@ ul {
 }
 li {
   margin-right: 20px;
+  font-size: 20px;
 }
 .header-section {
-    height: 92vh;
+    height: 84vh;
+    display: grid;
+    align-content: center;
 }
 .header-content{
     display: grid;
     align-items: center;
     grid-template-columns: auto auto;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 .header-img {
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 450px;
 }
 .header-name {
-  color: rgb(37, 37, 205);
+  color: #00bfff;
   font-size: 40px;
+  font-weight: 400px;
 }
 .header h2 {
   line-height: 40px;
+  font-weight: 200px;
 }
 .social-icons img{
     height: 40px;
@@ -56,8 +62,19 @@ li {
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width: 768px) {
-  .header {
+@media screen and (max-width: 1080px) {
+  .header-content {
     grid-template-columns: auto;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+  ul {
+    display: none;
   }
 }

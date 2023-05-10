@@ -13,6 +13,7 @@ body {
 h1 {
   color: #00bfff;
   font-size: 38px;
+  cursor: pointer;
 }
 nav {
   display: flex;
@@ -174,6 +175,21 @@ margin-left: 5px;
   margin: 50px 0;
 }
 
+
+.hamburger{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.line{
+  background-color: white;
+  height: 2px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1080px) {
   .header-content {
     grid-template-columns: auto;
@@ -196,4 +212,29 @@ margin-left: 5px;
   .project-card {
     grid-template-columns: auto;
   }
+  .hamburger{
+    display: flex;
+  }
+
+  .hamburger.active .line:nth-child(1){
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active .line:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .line:nth-child(3){
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .nav-links.responsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 8vh;
+    left: 0;
+    padding: 20px 0;
+  }
 }
+

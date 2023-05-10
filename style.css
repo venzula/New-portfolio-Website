@@ -123,7 +123,7 @@ button {
   font-size: 32px;
 }
 .skills-section{
-  height: 70vh;
+  height: fit-content;
 }
 .skills-details{
   display: flex;
@@ -150,7 +150,29 @@ margin-left: 5px;
 .fa-bootstrap{
   color: rgb(179, 40, 179);
 }
-
+.footer-social-icons img {
+  height: 40px;
+  margin: 0 10px;
+}
+.footersocial-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+.contact-heading{
+  font-size: 32px;
+}
+.contact-para{
+  margin: 15px 0;
+}
+.contact-container{
+  display: flex;
+  justify-content: space-between;
+}
+.copyright-text{
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
 
 @media screen and (max-width: 1080px) {
   .header-content {

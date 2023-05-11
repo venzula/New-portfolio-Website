@@ -21,6 +21,10 @@ nav {
   height: 8vh;
   align-items: center;
 }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
 
 ul {
   display: flex;
@@ -120,35 +124,36 @@ button {
 .project-heading {
   font-size: 32px;
 }
-.skills-heading{
+.skills-heading {
   font-size: 32px;
 }
-.skills-section{
+.skills-section {
   height: fit-content;
 }
-.skills-details{
+.skills-details {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0;
 }
-.frontend-icons i{
-font-size: 60px;
-margin-left: 5px;
+.frontend-icons i {
+  font-size: 60px;
+  margin-left: 5px;
 }
-.skill-title{
+.skill-title {
   font-size: 26px;
 }
-.fa-html5{
+.fa-html5 {
   color: red;
 }
-.fa-css3{
+.fa-css3 {
   color: rgb(145, 145, 244);
 }
-.fa-js{
+.fa-js {
   color: yellow;
 }
 
-.fa-bootstrap{
+.fa-bootstrap {
   color: rgb(179, 40, 179);
 }
 .footer-social-icons img {
@@ -159,24 +164,23 @@ margin-left: 5px;
   display: flex;
   justify-content: flex-start;
 }
-.contact-heading{
+.contact-heading {
   font-size: 32px;
 }
-.contact-para{
+.contact-para {
   margin: 15px 0;
 }
-.contact-container{
+.contact-container {
   display: flex;
   justify-content: space-between;
 }
-.copyright-text{
+.copyright-text {
   display: flex;
   justify-content: center;
   margin: 50px 0;
 }
 
-
-.hamburger{
+.hamburger {
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -184,7 +188,7 @@ margin-left: 5px;
   height: 20px;
   cursor: pointer;
 }
-.line{
+.line {
   background-color: white;
   height: 2px;
   width: 100%;
@@ -212,29 +216,29 @@ margin-left: 5px;
   .project-card {
     grid-template-columns: auto;
   }
-  .hamburger{
+  .hamburger {
     display: flex;
   }
 
-  .hamburger.active .line:nth-child(1){
+  .hamburger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
-  .hamburger.active .line:nth-child(2){
+  .hamburger.active .line:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.active .line:nth-child(3){
+  .hamburger.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
-  .nav-links.responsive{
+  .nav-links.responsive {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     position: absolute;
     width: 100%;
+    line-height: 30px;
     top: 8vh;
     left: 0;
     padding: 20px 0;
   }
 }
-
